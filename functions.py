@@ -19,7 +19,7 @@ def greet(a):
 
 
 def greet(a):
-    print(f"How do you do, {a}") # void function (none qiymat qaytaradi)
+    print(f"How do you do, {a}")  # void function (none qiymat qaytaradi)
 
 
 def greeting(b):
@@ -33,3 +33,18 @@ print("result:", result1)
 
 result2 = greeting("Martin")
 print("result2:", result2)
+
+print("====== Keyword & Default arguments ======")
+
+# DEFINE
+def give_greet(name, age=22):  # Default argument
+    print("give_greet is executed")
+    return f"Hi {name}, you are {age} years old!"
+
+
+# CALL
+result3 = give_greet(name="Justin", age=28)  # Keyword argument
+print("result3:", result3)
+
+result4 = give_greet(name="Alan")
+print("result4:", result4)

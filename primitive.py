@@ -29,7 +29,7 @@ print(f"the result (4): {result}")
 
 print("====== boolean ======")
 # functions > type() inout() bool() int() str()
-y = input("GIve your value for y: ")
+y = input("Give your value for y: ")
 print("y:", y)
 
 result = y.isnumeric()

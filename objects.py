@@ -35,11 +35,11 @@ try:
    a = car_dict.speed # car_dict ni ichidan speed statini topishga harakat qiladi
    result = car_dict["origin"] # xatolik sodir bo'lsa exceptga yuboradi
    print("result:", result)
-except KeyError as err:
-   print("No origin state property found", err)
-except AttributeError as err:
-   print("No speed found", err)
+except Exception as err:
+   print("General Error:", err)
 else: # tepadagi hamma mantiq ishga tushsa else execution boladi
    print("Executed successfully without errors")
 finally: # xatolik sodir bo'lsa ham har diom ishga tushadi
    print("Final closing logic")
+
+# Exception -> har qanday errorlarni handle qilib beradi

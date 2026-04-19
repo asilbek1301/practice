@@ -25,3 +25,21 @@ print(f"result1: {result1}")
 
 result2 = ceil(98.7) # pachagedan togridan-togri chaqirilgan methodni chaqirish
 print("result2:", result2)
+
+
+print("===== Error handling systems =====")
+car_dict = dict(name="Tayota", year=2026, electric=True)
+
+try:
+   print("passed here")
+   a = car_dict.speed # car_dict ni ichidan speed statini topishga harakat qiladi
+   result = car_dict["origin"] # xatolik sodir bo'lsa exceptga yuboradi
+   print("result:", result)
+except KeyError as err:
+   print("No origin state property found", err)
+except AttributeError as err:
+   print("No speed found", err)
+else: # tepadagi hamma mantiq ishga tushsa else execution boladi
+   print("Executed successfully without errors")
+finally: # xatolik sodir bo'lsa ham har diom ishga tushadi
+   print("Final closing logic")

@@ -8,7 +8,7 @@ for letter in text:
     print(f"the letter: {letter}")
 
 for ele in range_obj:
-    print(f"the element:, {ele}")
+    print(f"the element: {ele}")
 
 print("===== DICTIONARY =====")
 # Dictionary is JSON object!

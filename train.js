@@ -1,3 +1,32 @@
+/* C-TASK (Nodejs): [2026년 4월 22일]
+⭐️  Savol: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin. 
+MASALAN: checkContent("mitgroup", "gmtiprou") return qiladi true
+*/
+
+//⭐️  Masalaning yechimi:
+// DEFINE
+function checkContent(string1, string2) {
+  if(string1.length != string2.length) return false
+  else {
+    sum = 0;
+    for(i = 0; i < string1.length; i++) {
+    if(string2.includes(string1[i])) sum++;
+    }
+    if(sum == string1.length) return true
+    else {
+    return false
+    }
+  }
+}
+
+// CALL
+result = checkContent("mitgroup", "gmtiprou")
+console.log(result)
+
+
+//==================================================================
+
+
 /* ANIMAL CHALLENGE: [2026년 4월 19일]
 ⭐️  Savol: Shunday function tuzing, unga argument sifatida tekstni pass qilganda, undagi harflar berilgan listda bor hayvonlarni return qilsin. 
 MASALAN: 
@@ -5,7 +34,7 @@ findAnials('fdgwocalt')
 result: [ 'wolf', 'goat', 'dog', 'cat', 'cow' ] ni chiqaradi
 */
 
-// ⭐️  Masalaning yechimi:
+/* ⭐️  Masalaning yechimi:
 const animal_list = ["fox", "ant", "bird", "lion", "wolf", "deer", "bear", "frog", "hen", "mole", "duck", "goat", "dog", "cat", "bat", "cock", "cow"];
 
 // DEFINE
@@ -27,6 +56,7 @@ function findAnimals(text) {
 // CALL
 const result = findAnimals('ffffffffffffffdgwocalxt');
 console.log('result:', result);
+*/
 
 
 //==================================================================

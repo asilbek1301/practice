@@ -1,9 +1,33 @@
+/* D-TASK (Nodejs): [2026년 4월 24일]
+⭐️  Savol: Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin. 
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+
+// ⭐️  Masalaning yechimi:
+// DEFINE
+function getHighestIndex(array) {
+  let highestIndex = 0
+
+  for(i = 0; i < array.length; i++) {
+    if(array[highestIndex] < array[i]) highestIndex = array.indexOf(array[i])
+  }
+  return highestIndex
+}
+
+// CALL
+result = getHighestIndex([5, 21, 12, 21, 8])
+console.log(result)
+
+
+//==================================================================
+
+
 /* C-TASK (Nodejs): [2026년 4월 22일]
 ⭐️  Savol: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin. 
 MASALAN: checkContent("mitgroup", "gmtiprou") return qiladi true
 */
 
-//⭐️  Masalaning yechimi:
+/* ⭐️  Masalaning yechimi:
 // DEFINE
 function checkContent(string1, string2) {
   if(string1.length != string2.length) return false
@@ -22,6 +46,7 @@ function checkContent(string1, string2) {
 // CALL
 result = checkContent("mitgroup", "gmtiprou")
 console.log(result)
+*/
 
 
 //==================================================================

@@ -85,3 +85,16 @@ def greeting(*args, **kwargs):
 
 # CALL
 greeting("hi", True, 10, name="Alan", age=21)
+
+
+print("===== zip =====")  # maxsus object
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+# zip -> har ikkala tupleda bir xil indeksdagi qiymatlarni tuplega o'rab beradi
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped)
+
+# natijasini list ga oragan holatda kora olamiz
+result = list(zipped)
+print(f"the result: {result}")

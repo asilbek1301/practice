@@ -31,3 +31,32 @@ tuple_obj = ("MIT", 100, True, None)
 print(animals[0])
 print(tuple_obj[2])
 # animals[0] = "bird"
+
+
+# when making tuples try avoid this
+people = "Alan", "John"
+animals = "dog",
+
+print("===== Unpacking arguments =====")  # Tuple orqali Argumentlarni yoyish
+groups = ["MIT", "FLEXY", "DEVEX", "MG"]
+(x, y, *z) = groups  # *z listdagi qolgan qiymatlarni o'ziga oladi
+print(f"the x: {x} and y: {y}")
+print("z:", z)  # list
+
+
+# *args -> tuple
+def calculate(*args):
+    print("*args", args)
+    total = 1
+    for x in args:
+        total *= x
+    print(f"the total value: {total}")
+    return total
+
+
+# CALL
+calculate(1, 7, 2, 3)
+print("--"*20)
+calculate(0, 2, 300)
+print("--"*20)
+calculate(5, 7)

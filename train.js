@@ -1,9 +1,32 @@
+/* E-TASK (Nodejs): [2026년 4월 25일]
+⭐️  Savol: Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin. 
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+
+// ⭐️  Masalaning yechimi:
+// DEFINE
+function getReverse(string) {
+  let newArray = []
+  for(i = 0; i < string.length; i++) {
+    newArray.unshift(string[i])
+  }
+  return newArray.join("")
+}
+
+// CALL
+result = getReverse("hello")
+console.log(result)
+
+
+//==================================================================
+
+
 /* D-TASK (Nodejs): [2026년 4월 24일]
 ⭐️  Savol: Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin. 
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 */
 
-// ⭐️  Masalaning yechimi:
+/* ⭐️  Masalaning yechimi:
 // DEFINE
 function getHighestIndex(array) {
   let highestIndex = 0
@@ -17,6 +40,7 @@ function getHighestIndex(array) {
 // CALL
 result = getHighestIndex([5, 21, 12, 21, 8])
 console.log(result)
+*/
 
 
 //==================================================================

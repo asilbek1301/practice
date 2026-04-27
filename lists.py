@@ -1,0 +1,95 @@
+''' List
+    (1) Working with lists
+    (2) List methods
+    (3) Lambda function
+    (4) Enumerate, map and filter 
+'''
+
+print("===== Working with lists =====")
+# Java/PHP/NodeJS array => Python list
+
+# Literal
+person = {"name": "Alan", "age": 21}  # dictionary
+people = ("Martin", "David", "Michael")  # tuple
+groups = ["MIT", "FLEXY", "DEVEX", "MG"]  # list
+for team in groups:
+    print(f"the team: {team}")
+
+
+# constructor
+result = list("Hello World!")
+print(f"the letter: {result} and size: {len(result)}")
+
+
+print("--"*30)
+fruits = ["apple", "orange", "lemon", "kiwi"]
+
+a = fruits[0]
+b = fruits[0:2]  # [0, 2)
+c = fruits[::3]  # [start : end : step]
+d = fruits[::-1]  # listni teskari qilib beradi
+
+print("a:", a)
+print("b:", b)
+print("c:", c)
+print("d:", d)
+
+
+print("===== List methods =====")
+# mutable methods -> append() insert() pop() remove() clear() sort()   immutable method -> index() sorted()
+
+letters = ["a", "d", "b"]
+
+# append()
+letters.append("c")  # add behind
+print(f"the append letters: {letters}")
+
+# insert()
+letters.insert(0, "z")  # add front
+print(f"the insert letters: {letters}")
+
+# pop() -> index bo'yicha o'chiradi
+size = len(letters) - 1
+result1 = letters. pop(size)  # pop behind
+print(f"the pop result1: {result1} letters: {letters}")
+
+result2 = letters.pop(0)  # pop front
+print(f"the pop result2: {result2} letters: {letters}")
+
+
+print("--"*30)
+animals = ["dog", "cat", "capybara", "fish", "lion"]
+print("animals:", animals)
+
+# remove() -> value bo'yicha o'chiradi
+animals.remove("lion")
+print("animals remove:", animals)
+
+del animals[2:4]
+print("animals delete:", animals)
+
+# immutable index() -> (value) kiritilganda mavjud bo'lsa index raqami, bo'lmasa ValueError chiqaradi
+exist = animals.index("cat")
+print("cat exist:", exist)
+
+# clear() -> hammasini o'chiradi
+animals.clear()
+print("animals clear:", animals)
+
+if "cat" in animals:
+    print("index of cat:", animals.index("cat"))
+else:
+    print("cat doe not exist")
+
+print("--"*30)
+# sort()
+numbers = [2, 20, 12, 8, 57]
+numbers.sort()  # tartiblash
+print("sort default:", numbers)
+numbers.sort(reverse=True)  # teskari tartiblash
+print("sort reverse:", numbers)
+
+# immutable sorted()
+numbs = [2, 20, 12, 100]
+new_numbs = sorted(numbs)
+print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")

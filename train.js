@@ -1,9 +1,35 @@
+/* F-TASK (Nodejs): [2026년 4월 28일]
+⭐️  Savol: Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak. 
+MASALAN: findDoublers("hello") return true return qiladi
+*/
+
+// ⭐️  Masalaning yechimi:
+// DEFINE
+function findDoublers(string) {
+  for(i = 0; i < string.length; i++) {
+    let b = 0;
+    for(x = 0; x < string.length; x++) {
+      if(string[i] == string[x]) b++;
+    }
+    if(b > 1) return true
+  }
+  return false
+}
+
+// CALL
+result = findDoublers("hello")
+console.log(result)
+
+
+//==================================================================
+
+
 /* E-TASK (Nodejs): [2026년 4월 25일]
 ⭐️  Savol: Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin. 
 MASALAN: getReverse("hello") return qilsin "olleh"
 */
 
-// ⭐️  Masalaning yechimi:
+/* ⭐️  Masalaning yechimi:
 // DEFINE
 function getReverse(string) {
   let newArray = []
@@ -16,6 +42,7 @@ function getReverse(string) {
 // CALL
 result = getReverse("hello")
 console.log(result)
+*/
 
 
 //==================================================================

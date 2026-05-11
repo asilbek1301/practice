@@ -1,3 +1,29 @@
+''' K-TASK (PYTHON): [2026년 5월 11일]
+⭐️  Savol: Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin. 
+MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
+'''
+
+# ⭐️  Masalaning yechimi:
+# DEFINE
+
+
+def find_longest(string):
+    string_list = string.split()
+    longest_word = string_list[0]
+    for ele in string_list:
+        if len(ele) > len(longest_word):
+            longest_word = ele
+    return longest_word
+
+
+# CALL
+result = find_longest("I come from Uzbekistan")
+print(f"result: {result}")
+
+
+# ==================================================================
+
+
 ''' I-TASK (PYTHON): [2026년 5월 6일]
 ⭐️  Savol: Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin. 
 MASALAN: get_digits("m14i1t") return qiladi "141"
@@ -6,7 +32,7 @@ MASALAN: get_digits("m14i1t") return qiladi "141"
 # ⭐️  Masalaning yechimi:
 # DEFINE
 
-
+'''
 def get_digits(string):
     digits = ""
     for letter in string:
@@ -18,6 +44,7 @@ def get_digits(string):
 # CALL
 result = get_digits("m14i1t")
 print(f"result: {result}")
+'''
 
 
 # ==================================================================

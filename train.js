@@ -1,9 +1,37 @@
+/* L-TASK (NodeJS): [2026년 5월 13일]
+⭐️  Savol: Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+*/
+
+// ⭐️  Masalaning yechimi:
+// DEFINE
+function reverseSentence(sentence) {
+  let arraySentence = sentence.split(" ");
+  let resultSentence = [];
+  for(let i = 0; i < arraySentence.length; i++) {
+    let reversedWord = [];
+    for(let j = 0; j < arraySentence[i].length; j++) {
+      reversedWord.unshift((arraySentence[i])[j])
+    }
+    resultSentence.push(reversedWord.join(""));
+  }
+  return resultSentence.join(" ");
+}
+
+// CALL
+result = reverseSentence("we like coding!");
+console.log(result);
+
+
+//==================================================================
+
+
 /* J-TASK (NodeJS): [2026년 5월 8일]
 ⭐️  Savol: Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
 MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 */
 
-// ⭐️  Masalaning yechimi:
+/* ⭐️  Masalaning yechimi:
 // DEFINE
 function majorityElement(numbArray) {
    
@@ -26,6 +54,7 @@ function majorityElement(numbArray) {
 // CALL
 result = majorityElement([1,2,3,4,5,4,3,4]);
 console.log(result);
+*/
 
 
 //==================================================================

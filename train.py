@@ -1,3 +1,25 @@
+''' M-TASK (PYTHON): [2026년 5월 14일]
+⭐️  Savol: Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin. 
+MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+'''
+
+# ⭐️  Masalaning yechimi:
+# DEFINE
+
+
+def palindrom_check(string):
+    result = True if string == string[::-1] else False
+    return result
+
+
+# CALL
+result = palindrom_check("dad")
+print(f"result: {result}")
+
+
+# ==================================================================
+
+
 ''' K-TASK (PYTHON): [2026년 5월 11일]
 ⭐️  Savol: Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin. 
 MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
@@ -6,7 +28,7 @@ MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
 # ⭐️  Masalaning yechimi:
 # DEFINE
 
-
+'''
 def find_longest(string):
     string_list = string.split()
     longest_word = string_list[0]
@@ -19,6 +41,7 @@ def find_longest(string):
 # CALL
 result = find_longest("I come from Uzbekistan")
 print(f"result: {result}")
+'''
 
 
 # ==================================================================

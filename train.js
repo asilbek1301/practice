@@ -1,9 +1,31 @@
+/* N-TASK (NodeJS): [2026년 5월 17일]
+⭐️  Savol: Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
+MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
+*/
+
+// ⭐️  Masalaning yechimi:
+// DEFINE
+function getSquareNumbers(numArray) {
+  const newArray = numArray.map((ele) => {
+    return {number: ele, square: ele * ele};
+  });
+  return newArray;
+}
+
+// CALL
+result = getSquareNumbers([1, 2, 120, 4, 3]);
+console.log(result);
+
+
+//==================================================================
+
+
 /* L-TASK (NodeJS): [2026년 5월 13일]
 ⭐️  Savol: Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
 MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 */
 
-// ⭐️  Masalaning yechimi:
+/* ⭐️  Masalaning yechimi:
 // DEFINE
 function reverseSentence(sentence) {
   let arraySentence = sentence.split(" ");
@@ -21,6 +43,7 @@ function reverseSentence(sentence) {
 // CALL
 result = reverseSentence("we like coding!");
 console.log(result);
+*/
 
 
 //==================================================================

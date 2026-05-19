@@ -1,3 +1,28 @@
+''' O-TASK (PYTHON): [2026년 5월 19일]
+⭐️  Savol: Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va List ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin. 
+MASALAN: calculate_summary([10, "10", {son: 10}, true, 35]) return 45
+'''
+
+# ⭐️  Masalaning yechimi:
+# DEFINE
+
+
+def calculate_summary(array):
+    summary = 0
+    for ele in array:
+        if type(ele) == type(summary):
+             summary += ele
+    return summary
+
+
+# CALL
+result = calculate_summary([10, "10", {"son": 10}, True, 35, False])
+print(f"result: {result}")
+
+
+# ==================================================================
+
+
 ''' M-TASK (PYTHON): [2026년 5월 14일]
 ⭐️  Savol: Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin. 
 MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
@@ -6,7 +31,7 @@ MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return Fals
 # ⭐️  Masalaning yechimi:
 # DEFINE
 
-
+'''
 def palindrom_check(string):
     result = True if string == string[::-1] else False
     return result
@@ -15,6 +40,7 @@ def palindrom_check(string):
 # CALL
 result = palindrom_check("dad")
 print(f"result: {result}")
+'''
 
 
 # ==================================================================

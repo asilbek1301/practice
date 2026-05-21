@@ -1,9 +1,28 @@
+/* P-TASK (NodeJS): [2026년 5월 21일]
+⭐️  Savol: Shunday function yozing, u object qabul qilsin va arrayni object arrayga otkazib arrayni qaytarsin qaytarsin.
+MASALAN: objectToArray({a: 10, b: 20}) return [['a', 10], ['b', 20]]
+*/
+
+// ⭐️  Masalaning yechimi:
+// DEFINE
+function objectToArray(object) {
+  return Object.entries(object)
+}
+
+// CALL
+result = objectToArray({a: 10, b: 20, c: -24, name: 'Alan', status: '학생'});
+console.log(result);
+
+
+//==================================================================
+
+
 /* N-TASK (NodeJS): [2026년 5월 17일]
 ⭐️  Savol: Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
 MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
 */
 
-// ⭐️  Masalaning yechimi:
+/* ⭐️  Masalaning yechimi:
 // DEFINE
 function getSquareNumbers(numArray) {
   const newArray = numArray.map((ele) => {
@@ -15,6 +34,7 @@ function getSquareNumbers(numArray) {
 // CALL
 result = getSquareNumbers([1, 2, 120, 4, 3]);
 console.log(result);
+*/
 
 
 //==================================================================
